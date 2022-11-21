@@ -337,9 +337,11 @@
             m. Warszawa, Aleje Jerozolimskie 21
             <ul class="footer-links">
               <li class="footer-mail">
-                <a href="mailto:info@example.com">info@example.com</a>
+                <a class="footer-mail-link"
+                  href="mailto:info@example.com">info@example.com</a>
               </li>
-              <li><a href="tel:+48111111111">+48 111 111 111</a></li>
+              <li><a class="footer-phone-link" href="tel:+48111111111">+48 111
+                  111 111</a></li>
             </ul>
           </address>
         </div>
@@ -372,7 +374,7 @@
           <fieldset class="newsletter-fieldset">
             <label for="mail">Zapisz się do newslettera</label>
             <input class="newsletter-input" type="email" placeholder="E-mail"
-              id="mail" />
+              name="leave your e-mail adress" />
           </fieldset>
           <button class="button-send" type="submit">Zapisz się<svg
               class="send-icon" width="24" height="24">
@@ -394,14 +396,14 @@
         <form class="modal-form">
           <fieldset class="modal-fieldset">
             <label for="name">Imie</label>
-            <input class="name input" type="text" id="name" /><svg
+            <input class="name input" type="text" name="give your name" /><svg
               class="modal-icons" width="12" height="12">
               <use href="./images/icons.svg#icon-human"></use>
             </svg>
           </fieldset>
           <fieldset class="modal-fieldset">
             <label for="phone">Telefon</label>
-            <input class="phone input" type="tel" id="phone"
+            <input class="phone input" type="tel" name=" give your phone nr"
               pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" /><svg class="modal-icons"
               width="13" height="13">
               <use href="./images/icons.svg#icon-phone2"></use>
@@ -409,19 +411,21 @@
           </fieldset>
           <fieldset class="modal-fieldset">
             <label for="name">Email</label>
-            <input class="email input" type="email" id="mail" /><svg
-              class="modal-icons" width="15" height="12">
+            <input class="email input" type="email"
+              name="give your e-mail address" /><svg class="modal-icons"
+              width="15" height="12">
               <use href="./images/icons.svg#icon-mail2"></use>
             </svg>
           </fieldset>
           <fieldset class="modal-fieldset">
             <label for="name">Komentarz</label>
-            <textarea class="comment-input"
+            <textarea class="comment-input" name="leave your comment"
               placeholder="Wprowadź tekst"></textarea>
           </fieldset>
         </form>
         <label class="legal-checkbox">
-          <input class="legal-input" type="checkbox" id="legal" />
+          <input class="legal-input" type="checkbox" id="legal"
+            name="check if you agree to legal docks" />
           Oświadczam iż akceptuję <a class="legal-docks" href="">Regulamin</a> i
           <a class="legal-docks" href="">Politykę
             Prywatności.</a>
