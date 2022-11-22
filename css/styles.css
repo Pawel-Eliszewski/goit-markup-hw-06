@@ -382,6 +382,11 @@ h3 {
     align-items: center;
 }
 
+.clients-list>li:hover {
+    border: 1px solid var(--hover-color);
+    cursor: pointer;
+}
+
 .our-clients-div>ul {
     display: flex;
     flex-wrap: wrap;
@@ -862,4 +867,39 @@ a:focus,
 .nav-list>li a:hover,
 .nav-list>li a:focus {
     color: var(--hover-color);
+}
+
+.legal-checkbox {
+    position: relative;
+}
+
+.legal-input {
+    width: 16px;
+    height: 15px;
+    visibility: hidden;
+    margin-top: -25px;
+}
+
+.checked-icon {
+    position: absolute;
+    left: 3px;
+    top: 4px;
+    fill: var(--text2-color);
+    cursor: pointer;
+}
+
+.checkbox-icon {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    fill: var(--logo-color2);
+    cursor: pointer;
+}
+
+.legal-checkbox:has(.legal-input:checked) .checkbox-icon {
+    fill: var(--hover-color);
+    background-color: var(--hover-color);
+    border-radius: 2px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
